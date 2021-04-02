@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require './lib/motorsport_news'
+require 'bundler/setup'
+
+
+MotorsportNews::CLI.new.call

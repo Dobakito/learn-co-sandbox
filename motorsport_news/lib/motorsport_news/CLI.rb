@@ -14,7 +14,7 @@ class MotorsportNews::CLI
   def display_news 
     puts "Fetching latest news."
     MotorsportNews::News.fetch_news
-    MotorsportNews::News.all.each {|n| puts "#{n.index}. #{n.headline}"}
+    MotorsportNews::News.all.take(7).each {|n| puts "#{n.index}. #{n.headline}"}
      puts "\nPlease type the number of the article you would like to read."
   end
   

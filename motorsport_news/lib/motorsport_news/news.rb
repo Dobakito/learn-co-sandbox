@@ -23,7 +23,7 @@ class MotorsportNews::News
   end 
   
   def self.exist?(input)
-    (1..all.length).include?(input.to_i)
+    (1..7).include?(input.to_i)
   end 
   
   def self.fetch_news

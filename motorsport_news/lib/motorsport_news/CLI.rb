@@ -23,7 +23,7 @@ class MotorsportNews::CLI
   end 
   
   def get_next_input
-    puts "\nIf you would like to view another article please type 'next' to view the article list, or type 'exit' to leave the app."
+    puts "\nIf you would like to view another article please type anything to view the article list, or type 'exit' to leave the app."
     get_user_input
   end 
   
@@ -38,7 +38,7 @@ class MotorsportNews::CLI
   end 
   
   def display_error
-    puts "That is not a valid input, please type a correct article id."
+    puts "That's an invalid input, please type a correct article index number."
   end 
   
   def display_exit
